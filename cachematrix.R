@@ -29,11 +29,40 @@ cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
 	M <- x$getinverse()
     if(!is.null(M)) {
-            message("getting cached data")
+            message("Getting cached matrix")
             return(M)
     }
     data <- x$get()
     M <- solve(data, ...)
     x$setinverse(M)
     M
+}
+
+## cacheSolveTest
+## This function runs the assignment and shows that the second time it is run, the line 
+## "getting cached data" is called.
+## It also demonstrates that the solution is correct given R's "solve" method.
+cacheSolveTest <- function() {
+    
+    print("Creating a solevable matrix as shown in the solve example at http://www.endmemo.com/program/R/solve.php")
+    M <- matrix(c(3,1,2,1),nrow=2,ncol=2)
+    
+    print("Displaying the matrix")
+    print(M)    
+    
+    print("Making the matrix cacheable")    
+    Mcacheable <- makeCacheMatrix(M)
+    
+    print("Solving inverse the first time, won't be cached")
+    Minverse <- cacheSolve(Mcacheable)
+    
+    print("Printing the inverse returned by cacheSolve")
+    print(Mcacheable$getinverse())
+    
+    print("Solving inverse the second time, WILL be cached")
+    MinverseCached <- cacheSolve(Mcacheable)
+    
+    print("Demonstrating correct result by solving original matrix, next line should be TRUE")
+    print(identical(MinverseCached, solve(M)))
+    
 }

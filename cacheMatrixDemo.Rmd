@@ -1,0 +1,11 @@
+---
+title: "cacheSolveTest Demo"
+author: "John Lockwood"
+date: "April 19, 2015"
+output: html_document
+---
+This file displays the output of a test function I wrote showing the correct behavior for the function.
+```{r}
+source('./cachematrix.R')
+cacheSolveTest()
+```
