@@ -49,7 +49,7 @@ cacheSolve <- function(x, ...) {
 ## It also demonstrates that the solution is correct given R's "solve" method.
 cacheSolveTest <- function() {
     
-    print("Creating a solevable matrix ")
+    print("Creating a solevable matrix")
     M <- matrix(c(3,1,2,1),nrow=2,ncol=2)
     
     print("Displaying the matrix")
