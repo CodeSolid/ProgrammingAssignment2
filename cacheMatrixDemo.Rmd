@@ -4,10 +4,19 @@ author: "John Lockwood"
 date: "April 19, 2015"
 output: html_document
 ---
-This file displays the output of a test function I wrote (cacheSolveTest) showing the correct behavior for the assignment functions:  makeCacheMatrix and cacheSolve.
+This file displays the output of a test function I wrote (cacheSolveTest) 
+showing the correct behavior for the assignment functions:  makeCacheMatrix 
+and cacheSolve.
 
-Note that not all matrices can be solved.  I used a matrix from an example I found at [http://www.endmemo.com/program/R/solve.php](as shown in the solve example at http://www.endmemo.com/program/R/solve.php).  Only 
+Note that not all matrices can be solved.  I used a matrix from an example I 
+found at [http://www.endmemo.com/program/R/solve.php](as shown in the solve 
+example at http://www.endmemo.com/program/R/solve.php).  Only 
 the initial matrix values are from that site, the rest is my work.
+
+The github repository for the cacheSolveTest function and the functions 
+under test is here:
+
+[https://github.com/JohnLockwood/ProgrammingAssignment2](https://github.com/JohnLockwood/ProgrammingAssignment2).
 
 ```{r}
 source('./cachematrix.R')

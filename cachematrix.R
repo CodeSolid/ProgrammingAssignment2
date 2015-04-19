@@ -44,8 +44,8 @@ cacheSolve <- function(x, ...) {
 }
 
 ## cacheSolveTest
-## This function runs the assignment and shows that the second time it is run, the line 
-## "getting cached data" is called.
+## This function runs the assignment and shows that the second time it is run, 
+## the line ## "getting cached data" is called.
 ## It also demonstrates that the solution is correct given R's "solve" method.
 cacheSolveTest <- function() {
     
@@ -67,7 +67,8 @@ cacheSolveTest <- function() {
     print("Solving inverse the second time, WILL be cached")
     MinverseCached <- cacheSolve(Mcacheable)
     
-    print("Demonstrating correct result by solving original matrix, next line should be TRUE")
+    print("Demonstrating correct result by solving original matrix")
+    print("The next line should be TRUE")
     print(identical(MinverseCached, solve(M)))
     
 }
