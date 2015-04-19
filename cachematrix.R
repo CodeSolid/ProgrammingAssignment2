@@ -1,5 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This file includes makeCacheMatrix and cacheSolve, the functions required
+## by the assignment.  In addition, I've also implemented a test function,
+## cacheSolveTest, which demonstrates the correct behavior.  You can see
+## the output of that function by looking at some HTML that I generated
+## using RMarkdown.  It's here:
+## http://rpubs.com/JohnLockwood/cacheMatrixDemo
 
 ## As described in the assignment, 
 ## "This function creates a special "matrix" object that can cache its inverse."
@@ -23,7 +27,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## As described in the assignment,
 ## This function computes the inverse of the special "matrix" returned by 
 ## makeCacheMatrix above. If the inverse has already been calculated 
-## (and the matrix has not changed), then cacheSolve should retrieve the inverse from the cache.
+## (and the matrix has not changed), then cacheSolve should retrieve the 
+## inverse from the cache.
 cacheSolve <- function(x, ...) {
     
     ## Return a matrix that is the inverse of 'x'
@@ -44,7 +49,7 @@ cacheSolve <- function(x, ...) {
 ## It also demonstrates that the solution is correct given R's "solve" method.
 cacheSolveTest <- function() {
     
-    print("Creating a solevable matrix as shown in the solve example at http://www.endmemo.com/program/R/solve.php")
+    print("Creating a solevable matrix ")
     M <- matrix(c(3,1,2,1),nrow=2,ncol=2)
     
     print("Displaying the matrix")

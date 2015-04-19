@@ -1,4 +1,12 @@
-### Introduction
+### Welcome Peer Reviewers!
+
+Hi, I hope you like my solution.  If you would like to see the output
+of the test function I wrote, please check out this document that I did
+using RMarkdown:
+
+[http://rpubs.com/JohnLockwood/cacheMatrixDemo](http://rpubs.com/JohnLockwood/cacheMatrixDemo)
+
+### Original Introduction from R. Peng's Repository:
 
 This second programming assignment will require you to write an R
 function that is able to cache potentially time-consuming computations.
